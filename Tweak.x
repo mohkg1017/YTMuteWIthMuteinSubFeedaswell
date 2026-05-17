@@ -37,10 +37,10 @@ static UIImage *muteImage(BOOL muted) {
 
 %group Muted
 
-%hook YTSingleVideoController
+%hook YTPlayerViewController
 
 - (void)setMuted:(BOOL)muted {
-    %orig(shouldMute());
+    %orig([self isInlinePlaybackActive] ? muted : shouldMute());
 }
 
 %end
