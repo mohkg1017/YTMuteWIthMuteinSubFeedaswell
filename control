@@ -1,6 +1,6 @@
 Package: com.ps.youmute
 Name: YouMute
-Version: 1.4.1
+Version: 1.4.2
 Architecture: iphoneos-arm
 Description: Mutes/unmutes videos in YouTube directly.
 Maintainer: PoomSmart

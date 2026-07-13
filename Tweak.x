@@ -47,6 +47,19 @@ static UIImage *muteImage(BOOL muted) {
 
 %end
 
+%group InlinePlayback
+
+%hook YTInlineMutedPlaybackPlayerOverlayViewController
+
+- (long long)audioControlUIStyle {
+    long long style = %orig;
+    return style == 0 ? 1 : style;
+}
+
+%end
+
+%end
+
 %group Top
 
 %hook YTMainAppControlsOverlayView
@@ -97,6 +110,7 @@ static UIImage *muteImage(BOOL muted) {
         UpdateImageOnVisibleKey: @YES
     });
     %init(Muted);
+    %init(InlinePlayback);
     %init(Top);
     %init(Bottom);
 }
