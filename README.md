@@ -7,3 +7,5 @@ Mutes/unmutes videos in iOS YouTube faster from the video overlay.
 
 ## Supported YouTube versions
 Version 16.42.3 and newer. Lower are either untested or unsupported.
+
+Just took poomsmarts version and also enabled muting in subscriptions page not just the home page!
