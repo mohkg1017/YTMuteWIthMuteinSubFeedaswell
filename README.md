@@ -1,5 +1,5 @@
 # YouMute
-Mutes/unmutes videos in iOS YouTube faster from the video overlay.
+Just took poomsmarts version and also enabled muting in subscriptions page not just the home page!
 
 ## Prerequisites
 
